@@ -1,5 +1,5 @@
 # Stage-1 : Building project with maven
-FROM maven:3.6.3-openjdk-17
+FROM maven:3.6.3-openjdk-17 AS build
 
 #Set Working directory
 WORKDIR /app
