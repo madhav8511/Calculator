@@ -11,4 +11,10 @@ public class CalculatorTest {
     public void testAdd() {
         assertEquals(10.0, Main.add(5.0, 5.0), epsilon);
     }
+
+    @Test
+    public void testSquareroot() {
+        assertEquals(5,Main.square_root(25),epsilon);
+        assertEquals(-1,Main.square_root(-1),epsilon);
+    }
 }
