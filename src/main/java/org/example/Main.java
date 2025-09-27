@@ -35,6 +35,13 @@ public class Main {
         return ans;
     }
 
+    public static double logarithm(double a)
+    {
+        if(a <= 0) return -1;
+
+        return Math.log(a);
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -48,6 +55,7 @@ public class Main {
             System.out.println("2. Square Root");
             System.out.println("3. Factorial");
             System.out.println("4. Power");
+            System.out.println("5. Logarithm");
             System.out.println();
 
             System.out.print("Enter your Choice: ");
@@ -105,6 +113,20 @@ public class Main {
                 double res = power(base,exponent);
                 System.out.println();
                 System.out.println("Final Result: " + res);
+            }
+            else if(choice == 5)
+            {
+                System.out.print("Enter the Number for Logarithm: ");
+                double a = sc.nextDouble();
+
+                double res = logarithm(a);
+                if(res == -1) System.out.println("Enter a valid Input > 0");
+
+                else
+                {
+                    System.out.println();
+                    System.out.println("Final Result: " + res);
+                }
             }
             else
             {
