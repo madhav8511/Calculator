@@ -16,6 +16,7 @@ public class Main {
         while (true)
         {
             System.out.println("!-- Welcome to calculator --!");
+            System.out.println();
             System.out.println("Please Enter Your Choice");
             System.out.println("0. Exit");
             System.out.println("1. Addition");
@@ -40,6 +41,7 @@ public class Main {
             {
                 System.out.println("Invalid Choice!");
             }
+            System.out.println();
         }
     }
 }

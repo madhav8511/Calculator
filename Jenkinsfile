@@ -8,6 +8,12 @@ pipeline{
 
     stages{
 
+        stage("Checkout"){
+            steps{
+                git "https://github.com/madhav8511/Calculator.git"
+            }
+        }
+
         stage("Check Build"){
             steps{
                 echo "Building phase..."
