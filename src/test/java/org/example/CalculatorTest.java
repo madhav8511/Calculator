@@ -17,4 +17,10 @@ public class CalculatorTest {
         assertEquals(5,Main.square_root(25),epsilon);
         assertEquals(-1,Main.square_root(-1),epsilon);
     }
+
+    @Test
+    public void testFactorial() {
+        assertEquals(120,Main.factorial(5),epsilon);
+        assertEquals(-1,Main.factorial(-1),epsilon);
+    }
 }
