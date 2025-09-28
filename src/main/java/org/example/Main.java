@@ -83,7 +83,11 @@ public class Main {
                 double a = sc.nextDouble();
 
                 double res = square_root(a);
-                if(res == -1) System.out.println("Enter a valid Input >= 0");
+                if(res == -1)
+                {
+                    System.out.println();
+                    System.out.println("Enter a valid Input >= 0");
+                }
                 else
                 {
                     System.out.println();
@@ -96,7 +100,11 @@ public class Main {
                 int a = sc.nextInt();
 
                 int res = factorial(a);
-                if(res == -1) System.out.println("Enter a valid Input >= 0");
+                if(res == -1)
+                {
+                    System.out.println();
+                    System.out.println("Enter a valid Input >= 0");
+                }
                 else
                 {
                     System.out.println();
@@ -120,7 +128,11 @@ public class Main {
                 double a = sc.nextDouble();
 
                 double res = logarithm(a);
-                if(res == -1) System.out.println("Enter a valid Input > 0");
+                if(res == -1)
+                {
+                    System.out.println();
+                    System.out.println("Enter a valid Input > 0");
+                }
 
                 else
                 {

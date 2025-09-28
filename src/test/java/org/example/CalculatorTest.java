@@ -3,6 +3,7 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class CalculatorTest {
     double epsilon = 0.001;
@@ -10,6 +11,7 @@ public class CalculatorTest {
     @Test
     public void testAdd() {
         assertEquals(10.0, Main.add(5.0, 5.0), epsilon);
+        assertNotEquals(9.0, Main.add(5.0, 5.0), epsilon);
     }
 
     @Test
