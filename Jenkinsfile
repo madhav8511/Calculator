@@ -47,6 +47,13 @@ pipeline{
                 }
             }
         }
+
+        stage('Ansible Deployment'){
+            steps{
+                echo "Deploying on Local System..."
+                sh 'ansible-playbook -i inventory.ini deployment.yml'
+            }
+        }
     }
 
     post {
