@@ -50,7 +50,7 @@ pipeline{
 
         stage('Ansible Deployment'){
             steps{
-                echo "Deploying on Local System..."
+                echo "Deploying on Local System via Ansible..."
                 sh 'ansible-playbook -i inventory.ini deployment.yml'
             }
         }
