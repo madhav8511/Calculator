@@ -6,11 +6,6 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    public static double add(double a, double b)
-    {
-        return a + b;
-    }
-
     public static double square_root(double a)
     {
         if(a < 0) return -1;
@@ -51,11 +46,10 @@ public class Main {
             System.out.println();
             System.out.println("Please Enter Your Choice");
             System.out.println("0. Exit");
-            System.out.println("1. Addition");
-            System.out.println("2. Square Root");
-            System.out.println("3. Factorial");
-            System.out.println("4. Power");
-            System.out.println("5. Logarithm");
+            System.out.println("1. Square Root");
+            System.out.println("2. Factorial");
+            System.out.println("3. Power");
+            System.out.println("4. Logarithm");
             System.out.println();
 
             System.out.print("Enter your Choice: ");
@@ -68,16 +62,6 @@ public class Main {
                 break;
             }
             else if(choice == 1)
-            {
-                System.out.print("Enter First Number: ");
-                double a = sc.nextDouble();
-                System.out.print("Enter Second Number: ");
-                double b = sc.nextDouble();
-
-                System.out.println();
-                System.out.println("Final Result: " + add(a,b));
-            }
-            else if(choice == 2)
             {
                 System.out.print("Enter the Number for Square Root: ");
                 double a = sc.nextDouble();
@@ -94,7 +78,7 @@ public class Main {
                     System.out.println("Final Result: " + res);
                 }
             }
-            else if(choice == 3)
+            else if(choice == 2)
             {
                 System.out.print("Enter the Number for Factorial: ");
                 int a = sc.nextInt();
@@ -111,7 +95,7 @@ public class Main {
                     System.out.println("Final Result: " + res);
                 }
             }
-            else if(choice == 4)
+            else if(choice == 3)
             {
                 System.out.print("Enter the Base number: ");
                 double base = sc.nextDouble();
@@ -122,7 +106,7 @@ public class Main {
                 System.out.println();
                 System.out.println("Final Result: " + res);
             }
-            else if(choice == 5)
+            else if(choice == 4)
             {
                 System.out.print("Enter the Number for Logarithm: ");
                 double a = sc.nextDouble();
