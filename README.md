@@ -1,3 +1,3 @@
 # To Run the Application : 
 ```bash
-docker run -it madhavgirdhar/calculator:latest
+docker run -it --name=calculator madhavgirdhar/calculator:latest
