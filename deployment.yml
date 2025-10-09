@@ -8,12 +8,15 @@
         name: docker
         state: started
 
-    - name: Pull latest Calculator image
-      ansible.builtin.command: docker pull madhavgirdhar/calculator:latest
+    - name: Pull Docker image
+      community.docker.docker_image:
+          name: madhavgirdhar/calculator:latest
+          source: pull
 
-    - name: Remove existing Calculator container if present
-      ansible.builtin.command: docker rm -f calculator
-      ignore_errors: yes
+    - name: Remove existing container if present
+      community.docker.docker_container:
+          name: calculator
+          state: absent
 
     - name: Create Calculator container (do not start)
       ansible.builtin.command: docker create -it --name calculator madhavgirdhar/calculator:latest
