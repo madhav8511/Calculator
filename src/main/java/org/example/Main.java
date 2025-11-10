@@ -6,6 +6,7 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    // Funtion to calculate square root
     public static double square_root(double a)
     {
         if(a < 0) return -1;
