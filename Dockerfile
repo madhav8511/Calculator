@@ -1,5 +1,6 @@
 # Stage 1: Run the application
-FROM openjdk:17-jdk-slim
+#FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-alpine
 
 #Set Working directory
 WORKDIR /app
