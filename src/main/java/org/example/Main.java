@@ -14,6 +14,7 @@ public class Main {
         return Math.sqrt(a);
     }
 
+    // Funtion to calculate power
     public static double power(double a, double b)
     {
         return Math.pow(a,b);
